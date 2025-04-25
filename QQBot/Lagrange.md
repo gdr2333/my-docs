@@ -107,19 +107,19 @@ dotnet publish Lagrange.Core\Lagrange.OneBot\Lagrange.OneBot.csproj -c Release -
 
 **如果你自己编译了Anycpu的版本，你必须要安装运行时。**
 
-Ubuntu 22.04+
+##### Ubuntu 22.04+
 
 ```sh
 apt install dotnet-runtime-8.0
 ```
 
-Enterprise Linux 8+, Fedora Linux
+##### Enterprise Linux 8+, Fedora Linux
 
 ```sh
 dnf install dotnet-runtime-8.0
 ```
 
-Alpine Linux（这并不会让Lagrange兼容Alpine Linux，我只是写一下）
+##### Alpine Linux（这并不会让Lagrange兼容Alpine Linux，我只是写一下）
 
 ```sh
 apk add dotnet8-runtime
@@ -127,7 +127,7 @@ apk add dotnet8-runtime
 
 ~~也不知道为什么Alpine不随大流~~
 
-Arch Linux
+##### Arch Linux
 
 ```sh
 pacman -Sy dotnet-runtime-8.0
@@ -135,19 +135,19 @@ pacman -Sy dotnet-runtime-8.0
 
 *你可以不加S，但是不同步数据库很可能出问题。*
 
-Gentoo Linux
+##### Gentoo Linux
 
 ```sh
 emerge -av =dev-dotnet/dotnet-sdk-8.0
 ```
 
-微软包源
+##### 微软包源
 
 参见 https://learn.microsoft.com/zh-cn/dotnet/core/install/linux
 
 *可能需要科学上网。*
 
-Snap（可能会出现奇奇怪怪的问题，备选中的备选）：
+##### Snap（可能会出现奇奇怪怪的问题，备选中的备选）：
 
 ```sh
 snap install dotnet-runtime-80
@@ -170,10 +170,10 @@ dotnet ./Lagrange.OneBot.dll
 自包含版本
 
 ```sh
-./Lagrange.OneBot.dll
+./Lagrange.OneBot
 ```
 
-*你可能需要`chmod +x ./Lagrange.OneBot.dll`*
+*你可能需要`chmod +x ./Lagrange.OneBot`*
 
 ### 优化
 
